@@ -1,0 +1,18 @@
+000 01 3FD 06 0FE #AC = N - 1
+001 21 0FD 01 0FB #0X0FD = N - 1 
+002 05 3FF 13 004 #&V1[i]
+003 01 0FB 05 3FE
+004 13 005 01 000 #&V2[i]
+005 21 0FC 09 3FE #V1[i] e V2[i]
+006 0B 0FC 0A 000 #V1[i]*V2[i]
+007 05 0FF 21 0FF #Soma += V1[i]*V2[i]
+008 01 0FB 05 0FE # i = i + 1
+009 21 0FB 01 0FD #condicao de parada do for
+00A 06 0FB 10 001 #jump condicional
+00B 01 0FF 0D 400 #passa a soma para AC
+
+0FB 00 00 00 00 00 #i
+0FC 00 00 00 00 00 #aux
+0FD 00 00 00 00 00 #N - 1
+0FE 00 00 00 00 01 #1
+0FF 00 00 00 00 00 #soma

@@ -1,0 +1,19 @@
+000 09 066 0B 110 #AC = g*x
+001 0A 000 21 06A#106 = y, AC = y
+002 0C 069 0A 000#MQ = k
+003 21 06B 01 067#107 = k
+004 06 068 21 06C#inicio do for, AC = y
+005 01 06A 0C 06B #
+006 0A 000 05 06B#AC = y/k
+007 0C 069 0A 000#AC = (k+y/k)/2
+008 21 06B 01 06C#107 = k
+009 0F 004 01 06B#condicao de parada
+00A 0D 400 00 000#fim da execucao
+066 00 000 00 00A #Valor de g constante
+067 00 000 00 009 #Valor inicial do contador
+068 00 000 00 001 #Constante 1
+069 00 000 00 002 #Constante 2
+#06A guarda valores
+#06B guarda k
+#06C guarda a contagem
+#06E guarda a entrada
